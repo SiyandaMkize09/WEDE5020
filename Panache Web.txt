@@ -1,0 +1,117 @@
+PANACHE WEBSITE
+│
+├── index.html                  ← HOME PAGE
+│   │
+│   ├── Header
+│   │   ├── Panache Logo
+│   │   └── Navigation Bar
+│   │       ├── Home
+│   │       ├── Shop
+│   │       ├── About Us
+│   │       ├── Contact
+│   │       ├── Login
+│   │       └── Cart
+│   │
+│   ├── Hero Section
+│   │   ├── Panache slogan
+│   │   ├── Introduction
+│   │   └── Shop Now button
+│   │
+│   ├── Featured Products
+│   │   ├── Product 1
+│   │   ├── Product 2
+│   │   ├── Product 3
+│   │   └── Product 4
+│   │
+│   ├── About Panache
+│   │   └── Read More button
+│   │
+│   ├── New Arrivals
+│   │
+│   ├── Customer Reviews
+│   │
+│   ├── Newsletter
+│   │   └── Email Subscription
+│   │
+│   └── Footer
+│       ├── Quick Links
+│       ├── Contact Information
+│       ├── Social Media
+│       └── Copyright
+│
+├── shop.html                   ← SHOP PAGE
+│   ├── Header / Navigation
+│   ├── Shop Title
+│   ├── Categories
+│   │   ├── T-Shirts
+│   │   ├── Hoodies
+│   │   ├── Jackets
+│   │   ├── Pants
+│   │   └── Accessories
+│   ├── Product List
+│   └── Footer
+│
+├── about.html                  ← ABOUT US
+│   ├── Header
+│   ├── Our Story
+│   ├── Our Mission
+│   ├── Our Vision
+│   ├── Our Values
+│   └── Footer
+│
+├── contact.html                ← CONTACT US
+│   ├── Header
+│   ├── Contact Information
+│   ├── Contact Form
+│   ├── Email
+│   ├── Phone
+│   └── Footer
+│
+├── login.html                  ← LOGIN
+│   ├── Header
+│   ├── Email
+│   ├── Password
+│   ├── Login Button
+│   └── Register Link
+│
+├── register.html               ← REGISTER
+│   ├── Header
+│   ├── Full Name
+│   ├── Email
+│   ├── Password
+│   ├── Confirm Password
+│   └── Register Button
+│
+├── cart.html                   ← SHOPPING CART
+│   ├── Header
+│   ├── Products in Cart
+│   ├── Quantity
+│   ├── Price
+│   ├── Remove Item
+│   ├── Total
+│   └── Checkout Button
+│
+├── checkout.html               ← CHECKOUT
+│   ├── Customer Details
+│   ├── Delivery Address
+│   ├── Payment Method
+│   ├── Order Summary
+│   └── Place Order
+│
+├── faq.html                    ← FAQ
+│   ├── Common Questions
+│   ├── Shipping Questions
+│   ├── Returns Questions
+│   └── Payment Questions
+│
+├── privacy.html                ← PRIVACY POLICY
+│
+├── terms.html                  ← TERMS & CONDITIONS
+│
+├── shipping.html               ← SHIPPING POLICY
+│
+├── returns.html                ← RETURNS & REFUNDS
+│
+└── cookies.html                ← COOKIE POLICY
+  
+
