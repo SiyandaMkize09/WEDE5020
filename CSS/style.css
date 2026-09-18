@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #000000;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+
+.hero {
+    height: 75vh;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background: #000000;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #333333;
+}
+
+/* PAGE HEADER */
+
+.page-header {
+    background: #111111;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.page-header h1 {
+    font-size: 45px;
+}
+
+/* GENERAL SECTIONS */
+
+.intro,
+.featured,
+.shop,
+.content,
+.cart {
+    padding: 70px 7%;
+}
+
+.intro {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.intro h2,
+.featured h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* PRODUCTS */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background: white;
+}
+
+.product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.product-card h2,
+.product-card h3 {
+    margin-top: 15px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.product-card label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.product-card select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* FORMS */
+
+.form-section {
+    max-width: 700px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+}
+
+form button {
+    align-self: flex-start;
+}
+
+/* CONTENT */
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.content h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.content h3 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+/* CART */
+
+.cart-item {
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.cart-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 40px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-content {
+        padding: 30px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 300px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .cart-total {
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+}
