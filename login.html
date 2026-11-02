@@ -34,39 +34,19 @@
 
     <h2>Login</h2>
 
-    <form>
+    <form id="loginForm" data-demo-form>
 
         <label>Email Address</label>
-        <input type="email" placeholder="Enter your email">
+        <input type="email" name="email" placeholder="Enter your email" required>
 
         <label>Password</label>
-        <input type="password" placeholder="Enter your password">
+        <input type="password" name="password" placeholder="Enter your password" required minlength="8">
 
         <button class="btn" type="submit">LOGIN</button>
 
     </form>
 
-    <hr>
-
-    <h2>Create Account</h2>
-
-    <form>
-
-        <label>Full Name</label>
-        <input type="text" placeholder="Enter your name">
-
-        <label>Email Address</label>
-        <input type="email" placeholder="Enter your email">
-
-        <label>Password</label>
-        <input type="password" placeholder="Create a password">
-
-        <label>Confirm Password</label>
-        <input type="password" placeholder="Confirm your password">
-
-        <button class="btn" type="submit">REGISTER</button>
-
-    </form>
+    <p>New to Panache? <a href="register.html">Create an account</a>.</p>
 
 </section>
 
@@ -74,5 +54,6 @@
     <p>&copy; 2026 Panache. All Rights Reserved.</p>
 </footer>
 
+    <script src="JS/script.js" defer></script>
 </body>
 </html>

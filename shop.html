@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Panache | Tracksuits, T-Shirts & Tank Tops</title>
+<meta name="description"
+content="Explore the Panache clothing collection, including premium tracksuits, T-shirts and tank tops.">
 
-    <title>Panache | Shop</title>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
 
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -45,13 +48,38 @@
 
 
     <!-- PRODUCTS -->
-    <section class="shop">
 
+<section class="shop-controls">
+    <h2>Find Your Style</h2>
+
+    <label for="productSearch">Search products</label>
+    <input
+        type="search"
+        id="productSearch"
+        placeholder="Search tracksuits, T-shirts, tank tops..."
+    >
+
+    <label for="categoryFilter">Filter by category</label>
+    <select id="categoryFilter">
+        <option value="all">All Products</option>
+        <option value="tracksuit">Tracksuits</option>
+        <option value="tshirt">T-Shirts</option>
+        <option value="tank">Tank Tops</option>
+    </select>
+
+    <label for="priceSort">Sort by price</label>
+    <select id="priceSort">
+        <option value="default">Default order</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+        <option value="name">Name: A to Z</option>
+    </select>
+</section>
         <div class="products">
 
 
             
-            <!-- TRACKSUIT -->
+            </ TRACKSUIT>
             
 <!-- TRACKSUIT -->
 
@@ -78,7 +106,7 @@
 
     <select
         id="tracksuitColour"
-        onchange="changeTracksuitColour()"
+        onchange="setTracksuitImage()"
     >
 
         <option value="Red track.jpeg">Red</option>
@@ -104,9 +132,7 @@
     </select>
 
 
-    <button class="btn">
-        ADD TO CART
-    </button>
+    <button class="btn" type="button" onclick="addSelectedProduct('tracksuit')">ADD TO CART</button>
 
 </div>
 
@@ -153,16 +179,11 @@ function changeTracksuitColour() {
 
     <select
         id="tshirtColour"
-        onchange="changeTshirtColour()"
+        
     >
 
-        <option value="Black t-shirt.jpeg">
-            Black
-        </option>
-
-        <option value="White t-shirt.jpeg">
-            White
-        </option>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
 
     </select>
 
@@ -183,8 +204,9 @@ function changeTracksuitColour() {
 
 
     <button
+        type="button"
         class="btn"
-        onclick="addToCart('Panache T-Shirt', 450)"
+        onclick="addSelectedProduct('tshirt')"
     >
         ADD TO CART
     </button>
@@ -217,16 +239,11 @@ function changeTracksuitColour() {
 
     <select
         id="tankColour"
-        onchange="changeTankColour()"
+        
     >
 
-        <option value="Black tank.jpeg">
-            Black
-        </option>
-
-        <option value="White tank.jpeg">
-            White
-        </option>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
 
     </select>
 
@@ -247,8 +264,9 @@ function changeTracksuitColour() {
 
 
     <button
+        type="button"
         class="btn"
-        onclick="addToCart('Panache Tank Top', 250)"
+        onclick="addSelectedProduct('tank')"
     >
         ADD TO CART
     </button>
